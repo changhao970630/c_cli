@@ -1,12 +1,19 @@
 <template>
   <div>
-    <img :src="logo" alt />
-    <p>Welcome to C-Cli</p>
+    <div id="app">
+      <img :src="logo" alt />
+      <p>Welcome to C-Cli</p>
+      <hr />
+      <p>
+        <a href="http://quancundexiwang.wang/#/home/home" target="blank">个人博客</a>
+        <a href="https://github.com/changhao970630/c_cli" target="blank">项目地址</a>
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
-import logo from "./assets/image/logo.png";
+import logo from "@/assets/image/logo.png";
 export default {
   name: "app",
   data() {
@@ -24,5 +31,8 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
+  a {
+    color: red;
+  }
 }
 </style>
