@@ -12,4 +12,8 @@ c_cli
 
 #### css-loader less-loader
 
-### vue vue-loader(记得使用 VueLoaderPlugin) vue-template-compiler
+#### url-loader
+
+#### vue vue-loader(记得使用 VueLoaderPlugin) vue-template-compiler
+
+#### vuex vuerouter

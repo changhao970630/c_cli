@@ -13,8 +13,10 @@
       </p>
       <router-link to="/home">Home</router-link>
       <router-link to="/ch">CodingHappier</router-link>
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </div>
-    <router-view></router-view>
   </div>
 </template>
 
@@ -34,13 +36,20 @@ export default {
 <style lang="less" scoped>
 div {
   width: 100%;
-  height: 100%;
   text-align: center;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   a {
-    color: red;
+    color: rgb(103, 116, 231);
+    padding: 12px;
+  }
+  .active-router {
+    color: rgba(255, 0, 0, 0.883);
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
   }
 }
 </style>
