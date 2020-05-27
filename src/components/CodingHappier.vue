@@ -1,5 +1,5 @@
 <template>
-  <div>CodingHappier</div>
+  <div>Hi I'm CodingHappier</div>
 </template>
 
 <script>
