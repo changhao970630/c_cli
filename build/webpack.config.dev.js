@@ -7,5 +7,6 @@ module.exports = smart(mainConfig, {
   devServer: {
     port: 8899,
     open: true,
+    historyApiFallback: true,
   },
 });
