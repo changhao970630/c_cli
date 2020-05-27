@@ -29,6 +29,7 @@ export default {
       logo: logo
     };
   },
+  methods:{},
   created() {}
 };
 </script>

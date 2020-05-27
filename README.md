@@ -2,7 +2,7 @@
 
 ![avatar](http://212.64.75.109/image/file-1725445a2cd.png)
 
-c_cli
+c_cli Progress
 
 #### 安装 webpack webpack-cli
 
