@@ -2,6 +2,9 @@ const path = require("path");
 const htmlwebpackplugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
+// const Dashboard = require("webpack-dashboard");
+// const DashboardPlugin = require("webpack-dashboard/plugin");
+// const dashboard = new Dashboard();
 module.exports = {
   entry: path.resolve("src/main.js"),
   output: {
@@ -72,6 +75,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin({ path: path.resolve("dist") }),
     new VueLoaderPlugin(),
+    // new DashboardPlugin(dashboard.setData),
   ],
   resolve: {
     //引入路径是不用写对应的后缀名
