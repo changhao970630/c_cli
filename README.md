@@ -19,3 +19,5 @@ c_cli Progress
 #### vue vue-loader(记得使用 VueLoaderPlugin) vue-template-compiler
 
 #### vuex vuerouter
+
+### 支持 jsx

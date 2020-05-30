@@ -11,6 +11,7 @@
         vuex测试数据：
         {{$store.state.vuex_test}}
       </p>
+      <function-comp></function-comp>
       <router-link to="/home">Home</router-link>
       <router-link to="/ch">CodingHappier</router-link>
       <transition name="fade" mode="out-in">
@@ -22,14 +23,18 @@
 
 <script>
 import logo from "@/assets/image/logo.png";
+import functionComp from "@/components/function-comp";
 export default {
   name: "app",
+  components: {
+    functionComp
+  },
   data() {
     return {
       logo: logo
     };
   },
-  methods:{},
+  methods: {},
   created() {}
 };
 </script>
@@ -51,6 +56,9 @@ div {
   }
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
     opacity: 0;
+  }
+  p {
+    margin: 30px;
   }
 }
 </style>
