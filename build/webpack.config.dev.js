@@ -14,7 +14,17 @@ module.exports = smart(mainConfig, {
     historyApiFallback: true,
     overlay: true,
     quiet: true,
+    proxy: {
+      '/api': {
+        target: 'http://v.juhe.cn/',
+        changeOrigin: true,  //是否跨域
+        pathRewrite: {
+          '^/api': ''   //重写接口
+        }
+      }
+    }
   },
+
   plugins: [
     new FriendlyErrorsWebpackPlugin({
       compilationSuccessInfo: {
